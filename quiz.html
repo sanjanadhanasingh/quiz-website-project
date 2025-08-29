@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>General Knowledge Quiz</h2>
+    <form method="POST">
+      <div class="mb-3">
+        <label>1. What is the capital of France?</label><br>
+        <input type="radio" name="q1" value="Paris" required> Paris<br>
+        <input type="radio" name="q1" value="London"> London<br>
+        <input type="radio" name="q1" value="Berlin"> Berlin
+      </div>
+      <div class="mb-3">
+        <label>2. Who wrote Hamlet?</label><br>
+        <input type="radio" name="q2" value="Shakespeare" required> Shakespeare<br>
+        <input type="radio" name="q2" value="Dickens"> Dickens<br>
+        <input type="radio" name="q2" value="Austen"> Austen
+      </div>
+      <div class="mb-3">
+        <label>3. What is 5+7= ?</label><br>
+        <input type="radio" name="q3" value="9" required> 9<br>
+        <input type="radio" name="q3" value="13"> 13<br>
+        <input type="radio" name="q3" value="12"> 12 
+      </div>
+      <button type="submit" class="btn btn-custom">Submit Quiz</button>
+    </form>
+  </div>
+</body>
+</html>
